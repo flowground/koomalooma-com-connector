@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "user_id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "campaign_id": {
+                    "type": "string"
+                },
+                "promotion_goal_category": {
+                    "type": "string"
+                },
+                "promotion_goal_description": {
+                    "type": "string"
+                },
+                "transaction_value": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "campaign_id",
+                "transaction_value",
+                "promotion_goal_description",
+                "promotion_goal_category"
+            ],
+            "type": "object"
+        }
+    }
+}
